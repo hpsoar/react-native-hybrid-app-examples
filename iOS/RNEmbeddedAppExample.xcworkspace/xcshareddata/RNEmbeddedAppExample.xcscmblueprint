@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "505CDFCCD503C7EFFCD7FFAB2F0C3E4C2EF9A74D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "16CE14A2D81CCE323D476004724594AEF6B38C0A" : 0,
+    "505CDFCCD503C7EFFCD7FFAB2F0C3E4C2EF9A74D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F8DCBFA7-851C-41C4-B704-99F3A16F7E5C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "16CE14A2D81CCE323D476004724594AEF6B38C0A" : "react-native\/",
+    "505CDFCCD503C7EFFCD7FFAB2F0C3E4C2EF9A74D" : "react-native-hybrid-app-examples\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RNEmbeddedAppExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS\/RNEmbeddedAppExample.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/facebook\/react-native.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "16CE14A2D81CCE323D476004724594AEF6B38C0A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:dsibiski\/react-native-hybrid-app-examples.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "505CDFCCD503C7EFFCD7FFAB2F0C3E4C2EF9A74D"
+    }
+  ]
+}

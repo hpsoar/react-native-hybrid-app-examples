@@ -8,9 +8,9 @@
 
 #import "MenuViewController.h"
 
-#import "ViewInViewController.h"
 #import "PassingDataViewController.h"
 #import "ModalWithNavigatorViewController.h"
+#import "RCTViewController.h"
 
 @interface MenuViewController ()
 
@@ -80,17 +80,42 @@
     NSString *chosenItem = [[[data objectForKey:@"sectionKeys"] objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
   
     if ([chosenItem isEqualToString:@"ViewInView"]) {
-        ViewInViewController *viewInViewController = [[ViewInViewController alloc] init];
-        [self.navigationController pushViewController:viewInViewController animated:YES];
+        RCTViewController *vc = [[RCTViewController alloc] initWithModule:@"SimpleView" moduleParams:nil];
+        [vc showFrom:self animated:YES naviType:kRCTVCNaviTypePush];
     }
     else if ([chosenItem isEqualToString:@"PassingData"]) {
-        PassingDataViewController *passingDataViewController = [[PassingDataViewController alloc] init];
-        [self.navigationController pushViewController:passingDataViewController animated:YES];
+        RCTViewController *vc = [[RCTViewController alloc] initWithModule:@"PassingData" moduleParams:[self data]];
+        [vc showFrom:self animated:YES naviType:kRCTVCNaviTypePush];
     }
     else if ([chosenItem isEqualToString:@"ModalWithNavigator"]) {
-        ModalWithNavigatorViewController *modalWithNavigatorViewController = [[ModalWithNavigatorViewController alloc] init];
-        [self.navigationController presentViewController:modalWithNavigatorViewController animated:YES completion:nil];
+        RCTViewController *vc = [[RCTViewController alloc] initWithModule:@"ModalWithNavigator" moduleParams:nil];
+        [vc showFrom:self animated:YES naviType:kRCTVCNaviTypePushHideNaviBar];
     }
+}
+
+- (NSDictionary *)data {
+    return @{
+             @"data": @[
+                     @"Here",
+                     @"is",
+                     @"an",
+                     @"example",
+                     @"of",
+                     @"passing",
+                     @"data",
+                     @"into",
+                     @"a",
+                     @"React",
+                     @"View",
+                     @"that",
+                     @"is",
+                     @"embedded",
+                     @"in",
+                     @"a",
+                     @"Native",
+                     @"View",
+                     ]
+             };
 }
 
 @end

@@ -12,6 +12,7 @@ var {
 var SimpleList = require('./SimpleList');
 var SimpleView = require('./SimpleView');
 var ModalWithNavigatorCoordinator = NativeModules.ModalWithNavigatorCoordinator;
+var cyRCTPipe = NativeModules.cyRCTPipe;
 
 var data = [
     'One',
@@ -21,7 +22,8 @@ var data = [
 
 class ModalWithNavigator extends React.Component{
     _handleButton() {
-        ModalWithNavigatorCoordinator.closeModal();
+      //cyRCTPipe.closeModalVC();
+      cyRCTPipe.popVC();
     }
 
     _handleRowPress() {
@@ -45,6 +47,7 @@ class ModalWithNavigator extends React.Component{
                     },
                     leftButtonTitle: 'Close',
                     onLeftButtonPress: this._handleButton.bind(this),
+                    rightButtonTitle: 'OK',
                 }}
             />
         );
