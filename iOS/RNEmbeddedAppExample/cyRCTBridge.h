@@ -15,7 +15,7 @@
 /**
  *  cyRCTPipe module
  */
-@interface cyRCTPipe : NSObject <RCTBridgeModule>
+@interface cyRCTBridge : NSObject <RCTBridgeModule>
 
 - (void)registerFunc:(cyRCTFunc *)func name:(NSString *)name;
 - (void)registerFunc:(cyRCTFunc *)func;
@@ -43,9 +43,11 @@
 
 @end
 
-// cyRCTFuncDismissModalVC
+// functions
 #define kRCTFuncDismissModalVC @"dissmiss_vc"
 #define kRCTFuncPopVC @"pop_vc"
+
+// params
 #define kRCTFuncParameterAnimated @"animated"
 
 @interface cyRCTFuncDismissModalVC : cyRCTFunc

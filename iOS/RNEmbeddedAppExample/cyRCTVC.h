@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger, RCTVCNaviType) {
   kRCTVCNaviTypeModal,
 };
 
-@interface RCTViewController : UIViewController
+@interface cyRCTVC : UIViewController
 
 - (instancetype)initWithModule:(NSString *)moduleName moduleParams:(NSDictionary *)params;
 

@@ -6,9 +6,9 @@
 //  Copyright © 2015 Facebook. All rights reserved.
 //
 
-#import "cyRCTPipe.h"
+#import "cyRCTBridge.h"
 
-@implementation cyRCTPipe {
+@implementation cyRCTBridge {
   NSMutableDictionary *_funcMap;
 }
 

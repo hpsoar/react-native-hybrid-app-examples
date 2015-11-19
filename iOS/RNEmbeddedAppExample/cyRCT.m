@@ -7,7 +7,7 @@
 //
 
 #import "cyRCT.h"
-#import "cyRCTPipe.h"
+#import "cyRCTBridge.h"
 
 @implementation cyRCT
 
@@ -55,9 +55,9 @@
                                   launchOptions:launchOptions];
   
   
-  cyRCTPipe *pipe = [[cyRCT sharedManager] nativeModuleForString:@"cyRCTPipe"];
-  [pipe registerFunc:[cyRCTFuncDismissModalVC new]];
-  [pipe registerFunc:[cyRCTFuncPopVC new]];
+  cyRCTBridge *cyBridge = [[cyRCT sharedManager] nativeModuleForString:@"cyRCTBridge"];
+  [cyBridge registerFunc:[cyRCTFuncDismissModalVC new]];
+  [cyBridge registerFunc:[cyRCTFuncPopVC new]];
 }
 
 - (id)nativeModuleForString:(NSString *)moduleName {

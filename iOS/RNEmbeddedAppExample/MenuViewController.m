@@ -10,7 +10,7 @@
 
 #import "PassingDataViewController.h"
 #import "ModalWithNavigatorViewController.h"
-#import "RCTViewController.h"
+#import "cyRCTVC.h"
 
 @interface MenuViewController ()
 
@@ -80,16 +80,16 @@
     NSString *chosenItem = [[[data objectForKey:@"sectionKeys"] objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
   
     if ([chosenItem isEqualToString:@"ViewInView"]) {
-        RCTViewController *vc = [[RCTViewController alloc] initWithModule:@"SimpleView" moduleParams:nil];
+        cyRCTVC *vc = [[cyRCTVC alloc] initWithModule:@"SimpleView" moduleParams:nil];
         [vc showFrom:self animated:YES naviType:kRCTVCNaviTypePush];
     }
     else if ([chosenItem isEqualToString:@"PassingData"]) {
-        RCTViewController *vc = [[RCTViewController alloc] initWithModule:@"PassingData" moduleParams:[self data]];
+        cyRCTVC *vc = [[cyRCTVC alloc] initWithModule:@"PassingData" moduleParams:[self data]];
         [vc showFrom:self animated:YES naviType:kRCTVCNaviTypePush];
     }
     else if ([chosenItem isEqualToString:@"ModalWithNavigator"]) {
-        RCTViewController *vc = [[RCTViewController alloc] initWithModule:@"ModalWithNavigator" moduleParams:nil];
-        [vc showFrom:self animated:YES naviType:kRCTVCNaviTypePushHideNaviBar];
+        cyRCTVC *vc = [[cyRCTVC alloc] initWithModule:@"ModalWithNavigator" moduleParams:nil];
+        [vc showFrom:self animated:YES naviType:kRCTVCNaviTypeModal];
     }
 }
 

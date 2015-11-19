@@ -6,18 +6,18 @@
 //  Copyright © 2015 Facebook. All rights reserved.
 //
 
-#import "RCTViewController.h"
+#import "cyRCTVC.h"
 #import "RCTRootView.h"
 #import "AppDelegate.h"
 
-@interface RCTViewController ()
+@interface cyRCTVC ()
 @property (nonatomic, readonly) NSString *moduleName;
 @property (nonatomic, readonly) NSDictionary *params;
 @property (nonatomic) BOOL hideNavigationBar;
 @property (nonatomic) BOOL navigationBarWasHidden;
 @end
 
-@implementation RCTViewController
+@implementation cyRCTVC
 
 - (void)showFrom:(UIViewController *)vc animated:(BOOL)animated naviType:(RCTVCNaviType)naviType {
   switch (naviType) {

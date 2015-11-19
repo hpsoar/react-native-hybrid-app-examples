@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
-		128748EE1BFDBD3100384F27 /* RCTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128748ED1BFDBD3100384F27 /* RCTViewController.m */; settings = {ASSET_TAGS = (); }; };
+		128748EE1BFDBD3100384F27 /* cyRCTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 128748ED1BFDBD3100384F27 /* cyRCTVC.m */; settings = {ASSET_TAGS = (); }; };
 		128748F11BFDBF3F00384F27 /* cyRCT.m in Sources */ = {isa = PBXBuildFile; fileRef = 128748F01BFDBF3F00384F27 /* cyRCT.m */; settings = {ASSET_TAGS = (); }; };
-		12ED0FC61BFDD11700B7F7A6 /* cyRCTPipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 12ED0FC51BFDD11700B7F7A6 /* cyRCTPipe.m */; settings = {ASSET_TAGS = (); }; };
+		12ED0FC61BFDD11700B7F7A6 /* cyRCTBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 12ED0FC51BFDD11700B7F7A6 /* cyRCTBridge.m */; settings = {ASSET_TAGS = (); }; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -31,12 +31,12 @@
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RNEmbeddedAppExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNEmbeddedAppExampleTests.m; sourceTree = "<group>"; };
-		128748EC1BFDBD3100384F27 /* RCTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTViewController.h; sourceTree = "<group>"; };
-		128748ED1BFDBD3100384F27 /* RCTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTViewController.m; sourceTree = "<group>"; };
+		128748EC1BFDBD3100384F27 /* cyRCTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cyRCTVC.h; sourceTree = "<group>"; };
+		128748ED1BFDBD3100384F27 /* cyRCTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cyRCTVC.m; sourceTree = "<group>"; };
 		128748EF1BFDBF3F00384F27 /* cyRCT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cyRCT.h; sourceTree = "<group>"; };
 		128748F01BFDBF3F00384F27 /* cyRCT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cyRCT.m; sourceTree = "<group>"; };
-		12ED0FC41BFDD11700B7F7A6 /* cyRCTPipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cyRCTPipe.h; sourceTree = "<group>"; };
-		12ED0FC51BFDD11700B7F7A6 /* cyRCTPipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cyRCTPipe.m; sourceTree = "<group>"; };
+		12ED0FC41BFDD11700B7F7A6 /* cyRCTBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cyRCTBridge.h; sourceTree = "<group>"; };
+		12ED0FC51BFDD11700B7F7A6 /* cyRCTBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cyRCTBridge.m; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* RNEmbeddedAppExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNEmbeddedAppExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; tabWidth = 4; };
@@ -108,12 +108,12 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				128748EC1BFDBD3100384F27 /* RCTViewController.h */,
-				128748ED1BFDBD3100384F27 /* RCTViewController.m */,
+				128748EC1BFDBD3100384F27 /* cyRCTVC.h */,
+				128748ED1BFDBD3100384F27 /* cyRCTVC.m */,
 				128748EF1BFDBF3F00384F27 /* cyRCT.h */,
 				128748F01BFDBF3F00384F27 /* cyRCT.m */,
-				12ED0FC41BFDD11700B7F7A6 /* cyRCTPipe.h */,
-				12ED0FC51BFDD11700B7F7A6 /* cyRCTPipe.m */,
+				12ED0FC41BFDD11700B7F7A6 /* cyRCTBridge.h */,
+				12ED0FC51BFDD11700B7F7A6 /* cyRCTBridge.m */,
 			);
 			path = RNEmbeddedAppExample;
 			sourceTree = "<group>";
@@ -299,9 +299,9 @@
 				554BCDE61B97AD11000A22EB /* MenuViewController.m in Sources */,
 				55E165A21B97CF37006817EA /* ViewInViewController.m in Sources */,
 				55F337A61B9A41C3001852D9 /* ModalWithNavigatorCoordinator.m in Sources */,
-				128748EE1BFDBD3100384F27 /* RCTViewController.m in Sources */,
+				128748EE1BFDBD3100384F27 /* cyRCTVC.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				12ED0FC61BFDD11700B7F7A6 /* cyRCTPipe.m in Sources */,
+				12ED0FC61BFDD11700B7F7A6 /* cyRCTBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
